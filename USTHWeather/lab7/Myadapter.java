@@ -38,10 +38,10 @@ public class Myadapter extends FragmentStatePagerAdapter {
         String title ="";
         switch (position){
             case 0:
-                title = "forecast fragment";
+                title ="weather fragment";
                 break;
             case 1:
-                title ="weather fragment";
+                title = "forecast fragment";
                 break;
         }
         return super.getPageTitle(position);
