@@ -10,6 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 public class Myadapter extends FragmentStatePagerAdapter {
 
     public Myadapter(@NonNull FragmentManager fm, int behavior){
+
         super(fm, behavior);
     }
 
@@ -21,15 +22,19 @@ public class Myadapter extends FragmentStatePagerAdapter {
                 return new WeatherFragment();
             case 1:
                 return new ForecastFragment();
+            case 2:
+                return new WeatherFragment();
+            default:
+                return new ForecastFragment();
         }
-        return null;
     }
 
 
 
     @Override
     public int getCount() {
-        return 0;
+
+        return 3;
     }
 
     @Nullable
@@ -38,10 +43,17 @@ public class Myadapter extends FragmentStatePagerAdapter {
         String title ="";
         switch (position){
             case 0:
+
                 title ="weather fragment";
                 break;
             case 1:
                 title = "forecast fragment";
+                break;
+            case 2:
+                title ="weather fragment";
+                break;
+            default:
+                title="forecast fragment";
                 break;
         }
         return super.getPageTitle(position);

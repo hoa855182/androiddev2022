@@ -16,16 +16,17 @@ import com.google.android.material.tabs.TabLayout;
 public class WeatherAndForecastFragment extends AppCompatActivity {
     private TabLayout mTablayout;
     private ViewPager mViewpager;
-    private Myadapter myadapter;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_weather_and_forecast);
 
-        mTablayout = findViewById(R.id.weather_forecast);
-        mViewpager = findViewById(R.id.Pageview1);
+        mTablayout = findViewById(R.id.tab_layout);
+        mViewpager = findViewById(R.id.view_pager);
 
-        myadapter = new Myadapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        Myadapter myadapter = new Myadapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         mViewpager.setAdapter(myadapter);
         mTablayout.setupWithViewPager(mViewpager);
 
