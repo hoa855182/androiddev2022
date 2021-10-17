@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="fragment_weather">bẳng thời tiết</string>
+    <string name="fragment_forecast">bảng dự đoán</string>
+    <string name="hello_blank_fragment">xin chào</string>
+    <string name="string1">thời tiết hôm nay</string>
+    <string name="string2">nắng</string>
+</resources>
