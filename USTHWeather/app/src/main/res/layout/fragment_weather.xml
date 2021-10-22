@@ -8,21 +8,17 @@
 
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:layout_marginTop="40dp">
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="1000dp"
-           android:layout_alignParentTop="true"
-           android:layout_marginBottom="40dp"
-           android:src="@drawable/area" />
+       android:layout_height="match_parent">
+       <View
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/area"/>
 
        <TextView
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:layout_alignParentLeft="true"
            android:layout_alignParentTop="true"
-           android:layout_marginTop="120dp"
            android:text="12C\nCloudy" />
 
        <TextView
@@ -30,8 +26,7 @@
            android:layout_height="match_parent"
            android:layout_alignParentTop="true"
            android:layout_alignParentRight="true"
-           android:text="Paris"
-           android:layout_marginTop="120dp"/>
+           android:text="Paris" />
 
        <ImageView
            android:layout_width="100dp"
